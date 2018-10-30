@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercício 04</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+  </div>
+
+  <script>
+
+  var divElement = document.querySelector("#app")
+  var ulElement = document.createElement('ul')
+  divElement.appendChild(ulElement)
+
+  var nomes = ["Diego", "Gabriel", "Lucas"];
+
+  for( nome of nomes){
+      var liElement = document.createElement("li")
+      let text = document.createTextNode(nome)
+      liElement.appendChild(text)
+      ulElement.appendChild(liElement)
+  }
+
+    function adicionar() {
+      var liElementNew = document.createElement('li')//criando a tag li.
+      var inpuText = document.querySelector('input[name=nome]')//buscando a tag input de propriedade name com valor nome e armazenando em inpuText.
+      let text = inpuText.value //obitendo os dados obtidos em inpuText pelo formulário de entrada da gat input por meio do value
+      
+      inpuText.setAttribute('placeholder', " ")
+      let textNew = document.createTextNode(text)
+      let ulElement = document.getElementsByTagName("ul")[0] //O getElementsByTagName sempre nos retona uma ista mesmo que tenha apenas um elemento, nesse caso estamos pegando o primeiro elemento da lista.
+      liElementNew.appendChild(textNew)
+      
+
+      let excluir = document.createElement('a')
+      excluir.setAttribute('title', 'Excluir Item')
+      excluir.setAttribute('href', '#')
+      let TextExcluir = document.createTextNode('Excluir')
+      excluir.appendChild(TextExcluir)
+      liElementNew.appendChild(excluir)
+      ulElement.appendChild(liElementNew)
+      excluir.onclick = function excluirItem() {
+        ulElement.removeChild(liElementNew)
+        //return ulElement
+      }
+      
+    }
+  </script>
+</body>
+
+</html>

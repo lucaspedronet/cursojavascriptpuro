@@ -1,0 +1,31 @@
+<html>
+<header>
+    <title>1º exercício</title>
+</header>
+<body>
+  <script>
+  var endereco = {
+    rua: "Rua dos pinheiros",
+    numero: 1293,
+    bairro: "Centro",
+    cidade: "São Paulo",
+    uf: "SP"
+  };
+
+  function longadouro(fixo){
+    return "O usuário mora em " 
+    + endereco.cidade + " / " 
+    + endereco.uf 
+    + " no bairro " 
+    + endereco.bairro 
+    + " , na rua "
+    + endereco.rua
+    + " com Nª "
+    + endereco.numero
+  }
+
+  resultado = longadouro(endereco)
+  console.log(resultado)
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<header>
+    <title>Operadores Logicos</title>
+</header>
+<body>
+  <script>
+  //AND, OR, NOT
+//igualdade e desengualde (===, ==, e !==, !=) por conteúdo e tipo.
+  var sexo = 'M', idade = 23
+
+  if (sexo === "M" && idade >= 18){
+    console.log('OK')
+  }
+
+  if (sexo !== "F" || idade >= 25){
+      console.log('OK')
+  }
+
+  var masculino;
+
+  if (sexo === "M") masculino = true
+  if (sexo !== "M") masculino = false
+
+//variável recebendo a condição, quando temos essa situação nos sempre iremos obter false, ture, undefault, null e ect.
+//neste caso como é uma unica condição podemos retirar os parantes.
+  var feminino = (sexo === "M");
+  var feminino = sexo === "F";
+
+  console.log(masculino, feminino)
+  </script>
+</body>
+</html>

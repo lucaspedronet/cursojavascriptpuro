@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercício 03</title>
+</head>
+
+<body>
+  <div id="app">
+    
+  </div>
+
+  <script>
+  var divElement = document.querySelector("#app")
+  var ulElement = document.createElement('ul')
+  divElement.appendChild(ulElement)
+
+  var nomes = ["Diego", "Gabriel", "Lucas"];
+
+  for( nome of nomes){
+      let liElement = document.createElement("li")
+      let text = document.createTextNode(nome)
+      liElement.appendChild(text)
+      ulElement.appendChild(liElement)
+  }
+  console.log(ulElement)
+  
+  </script>
+</body>
+
+</html>

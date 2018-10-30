@@ -1,0 +1,31 @@
+<html>
+<header>
+    <title>Condicionais</title>
+</header>
+<body>
+  <script>
+    function retornoSexo(sexo){
+    /*    if (sexo === 'M'){
+            return 'Masculino';
+        } else if (sexo === "F"){
+            return "Feminino";
+        } else {
+            return "Outra coisa"
+        }*/
+//quando estamos realizando uma comparação na mesma variável tendo uma estrutura de condição maior podemos fazer o uso do switch.
+      switch(sexo){
+        case "M":
+          return "Masculino";
+        case "F":
+          return "Feminina";
+        default:
+          return "Outro"
+           
+      }
+    }
+
+    resultado = retornoSexo("M")
+    console.log(resultado)
+  </script>
+</body>
+</html>

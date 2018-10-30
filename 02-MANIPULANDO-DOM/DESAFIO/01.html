@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercício 01</title>
+</head>
+
+<body>
+  <div id="app">
+    
+  </div>
+
+  <script>
+    var bntElement = document.createElement('button') //criar elemento button
+    bntElement.setAttribute('class', 'butao') //set o atributo class de valor butão
+    var text = document.createTextNode("Criar") //criar texto
+    bntElement.appendChild(text) //adicinando text dentro de bntElement
+    var container = document.querySelector("#app") // buscando tag com id=#app e armazenando dentro de cantainer.
+    container.appendChild(bntElement)// armazenando bntElement dentro do container
+    
+    
+    bntElement.onclick = function criarQuadrado(){ //a propriedade onclick de bntElement recebe a função criarQuadra
+      var divElement = document.createElement("div") //cria a tag div    
+      divElement.setAttribute('id', 'quadrado') //criar atributo id com valor quadrado dentro divElement
+      divElement.style.width = "100px"; //cria um estilo largura de 100px
+      divElement.style.height = "100px"; //cria um estilo altura de 100px
+      divElement.style.backgroundColor = "#FF0000" //criar estilo cor vermelha de fundo.
+      container.appendChild(divElement) //adiciona divElement em container.
+    }
+
+    
+
+  </script>
+</body>
+
+</html>
