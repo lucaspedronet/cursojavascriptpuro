@@ -1,5 +1,7 @@
 var minhaPromise = function() {
+  //A função minhaPromise retorna uma Promise
     return new Promise(function(resolve, reject) {
+      //Promise tem como parametro um função
       var xhr = XMLHttpRequest();
       xhr.open('GET', 'https://github.com/users/lucaspedronet')
       xhr.send(null)
