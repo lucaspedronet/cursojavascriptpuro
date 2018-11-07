@@ -3,6 +3,8 @@ var listElement = document.querySelector("#app ul")
 var inputElement = document.querySelector("#app input")
 var buttonElement = document.querySelector("#app button")
 
+//JSON.parse() converte o parametro localStorage.getItem('Lista_tudo') em um array.
+// caso não exista nada em "Lista_tudo" é criado um array vazio.
 var todos = JSON.parse(localStorage.getItem('Lista_tudo')) || [];
 // var todos = [
 //   'Fazer cafe',
@@ -10,7 +12,7 @@ var todos = JSON.parse(localStorage.getItem('Lista_tudo')) || [];
 //   'Estudar javascript',
 // ];
 
-// SEGUNDA AULA
+
 function renderTodo() {
     listElement.innerHTML = ""; //apagando conteúdo de ul
   for (todo of todos) { //um for especifico para arrays
@@ -22,7 +24,6 @@ function renderTodo() {
     var excluirElement = document.createElement("a")
     excluirElement.setAttribute("onclick", "excluirTodo(" + index + ")")
 
-    // TERCEIRA AULA
     excluirElement.setAttribute("href", "#")
     text = document.createTextNode("Excluir")
     excluirElement.appendChild(text)
@@ -33,7 +34,6 @@ function renderTodo() {
 }
 renderTodo()
 
-// TERCEIRA AULA
 function addTodo() {
   var textTodo =  inputElement.value;
 
@@ -44,7 +44,6 @@ function addTodo() {
 }
 buttonElement.onclick = addTodo;
 
-// QUARTA AULA
 function excluirTodo(index) {
 //o splice recebe o 1ª paramentro que é a posição e o 2º é a qnt de item que devem ser removidos do array na aquela possição.
   todos.splice(index, 1)
@@ -52,10 +51,6 @@ function excluirTodo(index) {
   saveStore()
 }
 
-// buttonElement.onclick = function press(){
-//     addTodo()
-// }
-// QUINTA AULA
 function saveStore() {
     localStorage.setItem("Lista_tudo", JSON.stringify(todos))
 }
