@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <script>
+        var x = 10, y = 5; //declarando variável x e y na mesma linha
+
+// ----------- Objeto ----------------\\
+        pessoa = { // Objeto pessoa que possui quatro membros (variáveis)
+            nome: 'Lucas Pedro', 
+            idade: 26,
+            sexo: 'Mascúlino', // sexo (nome): 'Masculino' (valor)
+            rg: '123.456.789'
+        } 
+
+// ----------- Vetor de Objeto ----------------\\
+        var endereco = [
+            {
+              rua: 'Curitiba',
+              lote: 11,
+              quadra: 44,
+              setor: 'Novo Planalto'
+            }
+        ]
+
+// ----------- Vetor de Objeto ----------------\\
+        dados = {
+            nome: pessoa.nome,
+            idade: pessoa.idade,
+            sexo: pessoa.sexo,
+            rg: pessoa.rg,
+            ender:{
+                rua: endereco[0].rua,
+                lote: endereco[0].lote,
+                quadra: endereco[0].quadra,
+                setot: endereco[0].setor
+            }
+
+        }
+
+        console.log(pessoa.nome, pessoa.idade)
+        console.log(pessoa.rg, pessoa.sexo)
+        console.log(endereco)
+        console.log(dados)
+    </script>
+
+</body>
+</html>

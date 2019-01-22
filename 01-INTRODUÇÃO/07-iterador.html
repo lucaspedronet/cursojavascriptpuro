@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iteradores</title>
+</head>
+<body>
+    <script>
+// ---------- ITERADORES --------------\\
+    var Rio = [
+      'Flamengo',
+      'Fluminense',
+      'Botafogo',
+      'Vasco',
+    ]
+
+    var SaoPaulo = [
+      'Palmeiras',
+      'São Paulo',
+      'Corinthias',
+      'Santos'
+    ]
+
+    var pessoa = {
+      nome: 'Lucas Pedro',
+      idade: 26,
+      sexo: 'M',
+    }
+
+// ---------- ITERADOR FOR --------------\\
+    for(var i=0; i<Rio.length; i++){
+      console.log(Rio[i])
+    }
+    for(var j=0; j<=SaoPaulo.length; j++){
+        console.log(SaoPaulo[j])
+      }
+    for(var i=0; i<=10; i++){
+        console.log(i)
+    }
+
+// ---------- ITERADOR FOR OF --------------\\    
+    for(var time of Rio){
+      console.log(time)
+    }
+
+// ---------- DIFERENÇA ENTRE FOR OF E FOR IN --------------\\
+    for(var atributo in pessoa){
+        var dados = pessoa[atributo]
+        console.log(dados)
+    }
+
+
+// ---------- BREAK	E	CONTINUE --------------\\
+    var	numeros	=	[1,2,3,4,5]; 
+    for(var	numero	of	numeros){
+      if(numero	> 3){
+        break;
+      }
+      console.log(numero); 
+     }
+     //	1	2	3 
+    
+    for(var	numero	of	numeros){
+      if(numero	===	2){
+        continue;
+      }
+      console.log(numero); 
+    }
+    //	1	3	4	5
+
+    var	bruxos	=	['Harry	Potter',	'Hermione	Granger',	'Rony	Weasley'];
+    
+    //	obtém	o	iterador 
+    var	iteradorBruxos	=	bruxos[Symbol.iterator]();
+
+    console.log(iteradorBruxos.next())	//	{value:	Harry	Potter,	done:	false} 
+    iteradorBruxos.next();	//	{value:	Hermione	Granger,	done:	false} 
+    iteradorBruxos.next();	//	{value:	Rony	Weasley,	done:	false}
+    console.log(iteradorBruxos.next());	//	{value:	undefined,	done:	true} 
+    console.log(typeof(bruxos[Symbol.iterator]()))
+
+
+    </script>
+</body>
+</html>

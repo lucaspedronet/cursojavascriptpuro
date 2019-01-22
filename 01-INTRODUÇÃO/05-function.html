@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <script>
+        
+        function soma(num1, num2){      //criando uma função function (palavra reservada p criar funções) soma ()
+            resultado = num1 + num2;
+            return resultado;
+        }
+        function definirSexo(sexo){
+           //M, F
+           //Masculino, Feminino
+           if (sexo=='F'){
+               return 'Feminino';
+            } else if (sexo==='M'){
+                return 'Masculino';
+            } else{
+                return 'Outros';
+            }
+        }
+        function DizerSexo(sexo){
+            switch(sexo){
+                case 'F':
+                return 'Feminino';
+                case 'M': 
+                return 'Masculino';
+                default:
+                return 'Outro'
+            }
+        }
+
+        var resultado = soma(10,2);
+        var r1 = definirSexo('F');
+        var r2 = DizerSexo('asf');
+        console.log(soma(10,2));
+        console.log(r1);
+        console.log(r2);
+    </script>
+
+</body>
+</html>

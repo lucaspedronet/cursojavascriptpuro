@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <script>
+        
+        function definirSexo(sexo){
+           //M, F
+           //Masculino, Feminino
+           if (sexo==='F'){
+               return 'Feminino';
+            } else if (sexo==='M'){
+                return 'Masculino';
+            } else{
+                return 'Outros';
+            }
+        }
+
+        function soma(a, b) {
+          if(a == b){
+            console.log(true)
+          } else if (a === b) {
+            console.log(false)
+          } else {
+            console.log("Outro!")
+          }
+        }
+        
+        function DizerSexo(sexo){
+          switch(sexo){
+            case 'F':
+              return 'Feminino';
+            case 'M': 
+              return 'Masculino';
+            default:
+              return 'Outro'
+          }
+        }
+        
+        
+
+// ----------- Estrutura de repetição while -----------------\\
+        var j = 102030
+        while(j>50){
+          j=j/5;
+          console.log(j);
+        }
+        
+        console.log(feminino);
+
+        var r1 = definirSexo('F');
+        var r2 = DizerSexo('asf')
+        
+        console.log(r1);
+        console.log(r2);
+        
+    </script>
+
+</body>
+</html>

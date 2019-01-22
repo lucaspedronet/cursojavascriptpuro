@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <script>
+        /*  INTERVALO EM JAVASCRIPT É ALGUMA FUNÇÃO QUE IRÁ EXECUTAR VARIAS VEZES DENTRO DE UM INTERVALO!
+            setInterval()
+            A função abaixo dar um dealer 
+            setTimeout()
+
+        */
+
+        function exibeAlgo(){
+            console.log("Hello world")
+        }
+       setInterval(exibeAlgo, 1000) 
+       //Acima estamos referenciando a função 'exibeAlgo' passando como paramentro para função 'setInterval' e '1000'
+       //Referênciar (função sem ()) a função é dizer que iremos usar seu escopo como parametro para outra função
+       // quando passamos a função dessa forma "exibeAlgo()" estamo invocando a mesma, ou seja executando.
+       setTimeout(exibeAlgo, 5000)
+       //
+        
+    </script>
+
+</body>
+</html>
