@@ -12,20 +12,21 @@
 
     var Botao1 = document.getElementById("botao")
     var Botao2 =  document.getElementsByClassName("botao2")[0]
-    
     var Botao3 = document.createElement('button')
+
     Botao3.setAttribute('title', 'Botao')
     Botao3.setAttribute('type', 'button')
     text = document.createTextNode("Click aqui")
     Botao3.appendChild(text)
     console.log(Botao3)
+
     var div = document.getElementById("app")
     div.appendChild(Botao3)
     Botao3.setAttribute('onclick', 'mostrarAlerta3()')
 
     
     Botao1.onclick = function mostrarAlerta (){
-        alert("Funcionou!")
+        alert("Primeiro Botão!")
         console.log(Botao1)
     }
 
@@ -35,14 +36,10 @@
     }
 
     function mostrarAlerta3 (){
-        alert("Botao três")
-        console.log(Botao1)
+        alert("Teceiro Botao")
+        console.log(Botao3)
     }
     
-
-
-
-        
     </script>
 </body>
 </html>
