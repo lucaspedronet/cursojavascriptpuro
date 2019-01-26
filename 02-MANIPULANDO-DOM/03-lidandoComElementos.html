@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+       <input type="text" name="nome" id="nome">
+        
+    </div>
+    
+    <script>
+      var link = document.createElement('a');
+      link.setAttribute('href', 'http://www.google.com');
+      link.title = 'Site de Pesquisa'
+      
+      link.appendChild(document.createTextNode('Acessar site de pesquisa'))
+      
+      var containerElement = document.querySelector("div[id=app]")
+      containerElement.appendChild(link)
+      
+      var linkGithub = document.querySelector('input#nome')
+      containerElement.removeChild(linkGithub)
+    
+    
+    </script>
+</body>
+</html>
