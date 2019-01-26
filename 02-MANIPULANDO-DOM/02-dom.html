@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos-inline</title>
+</head>
+<body>
+    <div id="app">
+        
+        
+        <button onclick="mostrarAlerte()">Aperte aqui!</button>
+        <!-- <button class="nome" type="text" name="nome" id="nome"> -->
+        
+        <input type="text" name="nome"/>
+        <button class="botao">Adicionar</button>
+
+
+    </div>
+    <script>
+        
+        var inputElement = document.getElementById('nome');
+        // variável inpuElement esta armazenando a referência de document esta passando pra ela.
+        //'document'é um variável global que referência a DOM (Arvore de elementos) do meu código html por meio do javascript.
+        //'getElementByid('nome')' função que busca um 'id' de parametro 'nome' na arvore de elementos.
+        
+        var inputElementTag = document.getElementsByTagName('input')[0];
+        // a função getElementsByTagName('') busca todas as tag de nome 'input', e sempre nos retorna um vetor.
+        // mesmo que haja apenas uma tag de nome 'input' ele nos retornrá um vetor. Caso queiramos acessar o atributo na possição 1.
+        // 'getElementsByTagName('input')[0]' utilizamos '[0]' pra indicar a posição.
+        
+        var inpuElementClass = document.getElementsByClassName('nome'); 
+        //a função getElementsByClassName('nome'); assim como getElementsByTagName('input'); ela também ira nos retornar um vetor
+        //poruqe a referência que ela busca é de uma classe e esta não é única (diferente do 'id' que é único)em um código html.
+        
+        var inpuElementQuery = document.querySelector('body div#app input');
+        //a função querySelector(); sempre irá nos retorna um único elemento.
+        // com querySelector(); você praticamente navega pela DOM passando como parametro as tag de navegação.
+        // caso queiramos acessar os propriedade daquele um elemento colocamos a mesma entre input[name="nome"]
+        
+        var inpuElementQueryAll = document.querySelectorAll('input');
+        // a função querySlectorAll(); me retorna todos as tags que foram passadas como parametros
+       
+        function mostrarAlerte(){
+            alert("Botão foi clicado!"); // fução alert() exibe um janela com uma mensagem passada como parametro.      
+        }
+
+        var buttonElement = document.querySelector('button.botao'); 
+        // buscando o resultado de button.botao o ponto indica uma classe.
+
+        var inputElement = document.querySelector('input[name=nome]'); 
+        //quando passamos nome de uma tag seguida de [] dizemos que seu atributo e seu respectivo valor ou seja a tag que 
+        // possuir esse atributo e valores serão adicionadas em inputElement.
+
+
+        buttonElement.onclick = function(){
+            var texto = inputElement.value;
+            alert(texto);
+        }
+
+        console.log(buttonElement);
+
+        
+        // console.log(inputElement);
+        console.log(inputElementTag);
+        console.log(document.getElementsByTagName('input'))
+        // console.log(inpuElementClass);
+        // console.log(inpuElementQuery);
+        // console.log(inpuElementQueryAll);
+        
+
+    </script>
+
+</body>
+</html>
