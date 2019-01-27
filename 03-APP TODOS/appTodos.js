@@ -45,7 +45,7 @@ function addTodo() {
 buttonElement.onclick = addTodo;
 
 function excluirTodo(index) {
-//o splice recebe o 1ª paramentro que é a posição e o 2º é a qnt de item que devem ser removidos do array na aquela possição.
+//o splice recebe dois parâmetros o 1ª é a posição e o 2º é a qnt de item que devem ser removidos do array na aquela possição.
   todos.splice(index, 1)
   renderTodo()
   saveStore()
