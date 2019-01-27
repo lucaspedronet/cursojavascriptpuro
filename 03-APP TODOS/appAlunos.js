@@ -49,16 +49,15 @@ function deletarTudo(){
    while(alunos.length>0){
      alunos.pop()
    }
-   console.log(alunos)
    renderizar()
    save()
-}
-
-function save(){
-  localStorage.setItem("ListaAlunos", JSON.stringify(alunos));
-}
-
-renderizar()
-console.log(excluirTudo)
+  }
+  
+  function save(){
+    localStorage.setItem("ListaAlunos", JSON.stringify(alunos));
+  }
+  
+  renderizar()
+  
 butaoElement.onclick = addTudo
 excluirTudo.onclick = deletarTudo
