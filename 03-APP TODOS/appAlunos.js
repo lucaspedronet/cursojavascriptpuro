@@ -19,7 +19,7 @@ function renderizar(){
         
     linkExcluir.setAttribute("href","#");
     linkExcluir.appendChild(document.createTextNode("Excluir"));
-    linkExcluir.setAttribute("onclick","remover("+index+")");
+    linkExcluir.setAttribute("onclick","removerAluno("+index+")");
     itemElement.appendChild(itemTexto);
     itemElement.appendChild(linkExcluir);
     ulElement.appendChild(itemElement);
@@ -28,24 +28,24 @@ function renderizar(){
   strong.appendChild(qntAlunos)  
 }
 
-function addTudo() {
+function addAluno() {
   var inputTexto = inputElement.value
   
   if(inputTexto.length){
-    alunos.push(inputTexto)
+    alunos.unshift(inputTexto)
     inputElement.value = ''
     renderizar()
     save()  
   }
 }
 
-function remover(index){
+function removerAluno(index){
   alunos.splice(index, 1)  
   renderizar()
   save()
 }
 
-function deletarTudo(){
+function removerTodoAluno(){
    while(alunos.length>0){
      alunos.pop()
    }
@@ -59,5 +59,5 @@ function deletarTudo(){
   
   renderizar()
   
-butaoElement.onclick = addTudo
-excluirTudo.onclick = deletarTudo
+butaoElement.onclick = addAluno
+excluirTudo.onclick = removerTodoAluno
