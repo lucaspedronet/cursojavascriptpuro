@@ -32,7 +32,7 @@ function addTudo() {
   var inputTexto = inputElement.value
   
   if(inputTexto.length){
-    alunos.push(inputTexto)
+    alunos.unshift(inputTexto)
     inputElement.value = ''
     renderizar()
     save()  
