@@ -1,9 +1,9 @@
-### Summary
+## Summary
 <ul>
     <li><a href="#">Introdução</a></li>
 </ul>
 
-## MÓDULO 01 - Conceitos iniciais
+### MÓDULO 01 - Conceitos iniciais
 
 <ul>
   <li><a href="#">Variáveis</a></li>
@@ -17,7 +17,7 @@
   <li><a href="#">Intervalo TimeOut</a></li>
 </ul>
 
-### MÓDULO 02 - Manipulando a DOM (Document Object Manipulation)
+#### MÓDULO 02 - Manipulando a DOM (Document Object Manipulation)
 
 <ul>
   <li><a href="#">Eventos InLines</a></li>
@@ -26,7 +26,7 @@
   <li><a href="#">Estilizando Elementos</a></li>
 </ul>
 
-### MÓDULO 03 - APP-LISTA-ALUNOS
+#### MÓDULO 03 - APP-LISTA-ALUNOS
 
 <ul>
   <li><a href="#">Estruturando App</a></li>
@@ -37,7 +37,7 @@
   <li><a href="#">Salvando lista de Alunos no localStorage</a></li>
 </ul>
 
-### MÓDULO 04 - JavaScript Assíncrono
+#### MÓDULO 04 - JavaScript Assíncrono
 
 <ul>
   <li><a href="#">Requisição AJAX</a></li>
