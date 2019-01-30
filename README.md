@@ -10,7 +10,7 @@ Curso de JavaScript Puro.
 <ul>
     <li>Para quem não possui nenhum conhecimento ou pouco em JavaScript.</li>
     <li>Para quem já desenvolve em HTML e CSS, mas pretender adiquirir novas habilidades no desenvolvimento de Aplicações Web.</li>
-    <li>Deve ser aluno do CEULP/Ulbra Palmas, que tenha disponibilidade, interesse e que não esteja ligado a nenhuma atividade (Estágio por exemplo) no CEULP/Ulbra.</li>
+    
     
 </ul>
 
