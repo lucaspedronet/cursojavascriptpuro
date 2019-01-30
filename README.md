@@ -1,10 +1,10 @@
 # JavaScript Puro
 Curso de JavaScript Puro.
 
-# Objetivo
+## Objetivo
 <p>Sempre que iremos começar a estudar um nova tecnologia nesse caso uma liguagem é altamente recomendado que compreendemos sua essencia assim com o conceito que a define e seus principais avanços, antes de chegarmos aos recursos modernos da linguagem. Com isso iremos descorbrir na prática como trabalhar e obter os melhores resultados com essa incrível linguagem.</p>
 
-# Recomendado
+## Recomendado
 <p> Esse é um <b>curso</b> recomendado pra quem quer dar os primeiros passos com <b>JavaScript</b> e descobrir na pratica como tudo funciona, focado apenas no essencial sem enrolação.
 </p>
 <ul>
@@ -14,4 +14,6 @@ Curso de JavaScript Puro.
     
 </ul>
 
-# Metódologia
+## Metódologia
+
+<h2><a href="https://github.com/lucaspedronet/cursojavascriptpuro/blob/master/SUMARY.md">Summary</a></h2>
